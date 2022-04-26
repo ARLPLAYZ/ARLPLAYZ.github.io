@@ -1,0 +1,115 @@
+body {
+    margin: 100px auto;
+    max-width: 900px;
+    line-height: 1.6;
+    font-size: 30px;
+    padding: 0 10px;
+    font-family: "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji";
+}
+
+.smallbar {
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+a::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+a::before {
+    content: " ";
+    display:block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(97, 60, 103);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+#domains {
+    font-size: 14px;
+    background-color: #F1F1F1;
+}
+
+a {
+    position: relative;
+    color: #744684;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#a04aa1;
+}
+
+h1, h2, h3 {
+    line-height: 1;
+}
+
+.arlplayz {
+    position: relative;
+    color: #d164fc;
+}
+.title {
+    position: relative;
+    color: #d164fc;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+p {
+    margin-bottom: 9px;
+
+}
+
+li::before {
+    content: "- ";
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #262626;
+        color: white;
+    }
+    #domains {
+        background-color: #2b2b2b;
+        word-wrap: break-word;
+    }
+    a {
+        color: #3391ff;
+    }
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range: U+0-7C,U+7D-FFFF;
+    src: local(''),
+            url('fonts/inter-v8-latin-regular.woff2') format('woff2') /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+
+  
